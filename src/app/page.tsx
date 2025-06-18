@@ -627,7 +627,7 @@ export default async function Home() {
 
         {/* Contact Section */}
         <section className="mb-16">
-          <div className="grid grid-cols-2 text-center">
+          <div className="grid grid-cols-1 text-center md:grid-cols-2">
             <h2 className="mb-8 text-3xl font-bold text-foreground">
               If you&apos;d like to connect,
               <br />
