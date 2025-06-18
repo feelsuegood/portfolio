@@ -15,6 +15,10 @@
 //   slug: string;
 // };
 
+export default function PostPage() {
+  return <div>PostPage</div>;
+}
+
 // export default async function PostPage({ params }: Props) {
 //   const { slug } = await params;
 //   const post = (await getPost(slug)) as Post;
