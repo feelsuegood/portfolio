@@ -28,7 +28,7 @@ const bodyFont = DM_Sans({
 });
 
 export const metadata: Metadata = {
-  title: "🎁 Feelsuegood's Portfolio",
+  title: "Feelsuegood's Portfolio",
   description: "The collection of Feelsuegood's personal projects",
   icons: "/favicon.ico",
 };
