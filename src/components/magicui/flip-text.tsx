@@ -54,7 +54,7 @@ export function FlipText({
             transition={{ duration, delay: i * delayMultiple }}
             className={cn(
               "origin-center drop-shadow-sm",
-              char === " " && "px-1",
+              char === " " ? "px-1" : "px-0",
               className,
             )}
             {...props}
