@@ -1,27 +1,24 @@
+import { FlipText } from "@/components/ui/flip-text";
 import Image from "next/image";
 
 export default async function Home() {
   return (
-    <div className="min-h-screen bg-background px-5 text-foreground md:px-10">
+    <div className="min-h-screen space-y-5 bg-background text-foreground md:space-y-20">
       {/* Header with Joystick Icon */}
-      <header className="p-10">
-        <div className="mb-8 flex items-center gap-4">
-          <div className="text-6xl">🕹️</div>
-          <h1 className="text-4xl font-bold text-muted-foreground md:text-5xl">
-            Welcome to my Dev Playground 🎯
-          </h1>
-        </div>
+      <header className="flex gap-1 text-2xl font-bold text-primary md:gap-2 md:text-5xl">
+        <span>🕹️</span>
+        <FlipText>Welcome to my Portfolio</FlipText>
       </header>
 
-      <div className="mx-auto max-w-7xl px-8">
+      <div className="mx-auto max-w-7xl">
         {/* About Section */}
         <section className="mb-16">
-          <div className="grid grid-cols-1 items-center gap-12 lg:grid-cols-2">
+          <div className="grid grid-cols-1 items-center space-y-10 lg:grid-cols-2 lg:gap-20">
             <div>
-              <h2 className="mb-6 text-3xl font-bold text-primary">
+              <h2 className="mb-6 text-lg font-bold text-muted-foreground md:text-3xl">
                 Hello, I&apos;m @feelsuegood.
               </h2>
-              <div className="space-y-4 text-lg text-muted-foreground">
+              <div className="text-md space-y-4 text-muted-foreground">
                 <p>
                   I&apos;m a full-stack software developer with a deep interest
                   in AI-powered applications.
@@ -51,7 +48,7 @@ export default async function Home() {
                     feelsuegood@gmail.com
                   </a>
                 </p>
-                <div className="flex gap-4 text-muted-foreground">
+                <div className="flex gap-1 text-muted-foreground">
                   <a
                     href="https://github.com/feelsuegood"
                     className="transition-colors hover:text-primary"
@@ -77,8 +74,8 @@ export default async function Home() {
             </div>
 
             {/* Avatar */}
-            <div className="flex justify-center lg:justify-end">
-              <div className="h-80 w-80 overflow-hidden rounded-full border-4 border-border">
+            <div className="flex justify-center lg:justify-start">
+              <div className="h-80 w-80 overflow-hidden rounded-full border-1 border-border">
                 <Image
                   src="/images/avatar.png"
                   alt="Profile Avatar"
