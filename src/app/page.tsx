@@ -3,7 +3,7 @@ import Image from "next/image";
 
 export default async function Home() {
   return (
-    <div className="min-h-screen space-y-5 bg-background text-foreground md:space-y-20">
+    <div className="mx-auto min-h-screen max-w-7xl space-y-10 bg-background text-foreground md:space-y-20">
       {/* Header with Joystick Icon */}
       <header className="flex gap-1 text-2xl font-bold text-primary md:gap-2 md:text-5xl">
         <span>🕹️</span>
@@ -13,9 +13,9 @@ export default async function Home() {
       <div className="mx-auto max-w-7xl">
         {/* About Section */}
         <section className="mb-16">
-          <div className="grid grid-cols-1 items-center space-y-10 lg:grid-cols-2 lg:gap-20">
-            <div>
-              <h2 className="mb-6 text-lg font-bold text-muted-foreground md:text-3xl">
+          <div className="grid grid-cols-1 space-y-10 lg:grid-cols-2 lg:gap-10">
+            <div className="flex h-full flex-col gap-5 lg:justify-between">
+              <h2 className="text-lg font-bold text-foreground md:text-3xl">
                 Hello, I&apos;m @feelsuegood.
               </h2>
               <div className="text-md space-y-4 text-muted-foreground">
@@ -36,45 +36,23 @@ export default async function Home() {
               </div>
 
               {/* Contact and Links */}
-              <div className="mt-8">
-                <p className="mb-4 text-muted-foreground">
-                  <span className="font-semibold text-foreground">
+              <div>
+                <p className="text-muted-foreground">
+                  <span className="font-semibold text-primary/80">
                     Get in touch ✉️{" "}
                   </span>
                   <a
                     href="mailto:feelsuegood@gmail.com"
-                    className="text-primary hover:underline"
+                    className="text-primary/80 hover:underline"
                   >
                     feelsuegood@gmail.com
                   </a>
                 </p>
-                <div className="flex gap-1 text-muted-foreground">
-                  <a
-                    href="https://github.com/feelsuegood"
-                    className="transition-colors hover:text-primary"
-                  >
-                    👩🏻‍💻 Github
-                  </a>
-                  <span>•</span>
-                  <a
-                    href="https://www.linkedin.com/in/feelsuegood"
-                    className="transition-colors hover:text-primary"
-                  >
-                    👤 LinkedIn
-                  </a>
-                  <span>•</span>
-                  <a
-                    href="https://www.seek.com.au/profile/sue-jeong-XGD5RSYYyc"
-                    className="transition-colors hover:text-primary"
-                  >
-                    ➡️ Seek
-                  </a>
-                </div>
               </div>
             </div>
 
             {/* Avatar */}
-            <div className="flex justify-center lg:justify-start">
+            <div className="flex flex-col items-center justify-center gap-10 lg:justify-start">
               <div className="h-80 w-80 overflow-hidden rounded-full border-1 border-border">
                 <Image
                   src="/images/avatar.png"
@@ -83,6 +61,28 @@ export default async function Home() {
                   height={320}
                   className="h-full w-full object-cover"
                 />
+              </div>
+              <div className="flex gap-1 text-primary">
+                <a
+                  href="https://github.com/feelsuegood"
+                  className="transition-colors hover:text-primary"
+                >
+                  👩🏻‍💻 Github
+                </a>
+                <span>•</span>
+                <a
+                  href="https://www.linkedin.com/in/feelsuegood"
+                  className="transition-colors hover:text-primary"
+                >
+                  👤 LinkedIn
+                </a>
+                <span>•</span>
+                <a
+                  href="https://www.seek.com.au/profile/sue-jeong-XGD5RSYYyc"
+                  className="transition-colors hover:text-primary"
+                >
+                  ➡️ Seek
+                </a>
               </div>
             </div>
           </div>
@@ -94,7 +94,7 @@ export default async function Home() {
             Skills
           </h2>
 
-          <div className="grid grid-cols-1 gap-8 md:grid-cols-2 lg:grid-cols-3">
+          <div className="grid grid-cols-1 gap-8 sm:grid-cols-2 md:grid-cols-3">
             {/* Programming Languages */}
             <div>
               <h3 className="mb-4 text-xl font-semibold text-primary">
