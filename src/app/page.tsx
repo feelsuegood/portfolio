@@ -126,7 +126,7 @@ export default async function Home() {
                 <li>• Chakra UI</li>
               </ul>
 
-              <h4 className="mt-6 mb-3 text-lg font-semibold text-primary underline">
+              <h4 className="mt-6 mb-3 text-lg font-semibold text-primary">
                 Mobile
               </h4>
               <ul className="space-y-2 text-muted-foreground">
