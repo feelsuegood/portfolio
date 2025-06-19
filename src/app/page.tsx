@@ -624,7 +624,7 @@ export default async function Home() {
         {/* Contact Section */}
         <section className="mb-16">
           <div className="grid grid-cols-1 text-center md:grid-cols-2">
-            <h2 className="text-foreground mb-8 text-3xl font-bold">
+            <h2 className="text-foreground mb-8 text-lg sm:text-2xl font-bold">
               If you&apos;d like to connect,
               <br />
               please get in touch →
@@ -635,7 +635,7 @@ export default async function Home() {
                 <span className="text-2xl">✉️</span>
                 <a
                   href="mailto:feelsuegood@gmail.com"
-                  className="text-primary text-xl transition-colors hover:underline"
+                  className="text-primary text-lg sm:text-xl transition-colors hover:underline"
                 >
                   feelsuegood@gmail.com
                 </a>
