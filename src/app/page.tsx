@@ -15,10 +15,10 @@ export default async function Home() {
         <section className="mb-16">
           <div className="grid grid-cols-1 space-y-10 lg:grid-cols-2 lg:gap-10">
             <div className="flex h-full flex-col gap-5 lg:justify-between">
-              <h2 className="text-lg font-bold text-foreground md:text-3xl">
+              <h2 className="text-xl font-bold text-foreground md:text-3xl">
                 Hello, I&apos;m @feelsuegood.
               </h2>
-              <div className="text-md space-y-4 text-muted-foreground">
+              <div className="text-md space-y-4 text-muted-foreground md:text-lg">
                 <p>
                   I&apos;m a full-stack software developer with a deep interest
                   in AI-powered applications.
