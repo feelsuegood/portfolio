@@ -30,23 +30,112 @@ export function Pointer({
   const [isActive, setIsActive] = useState<boolean>(false);
   const containerRef = useRef<HTMLDivElement>(null);
 
+  const [hasTouchCapability, setHasTouchCapability] = useState<boolean>(false);
+  const [hasMouseMoved, setHasMouseMoved] = useState<boolean>(false);
+
+  // Detect touch devices and add global event listeners
   useEffect(() => {
+    if (typeof window !== "undefined") {
+      // Check if device has touch capability
+      const checkTouchCapability = () => {
+        return (
+          "ontouchstart" in window ||
+          navigator.maxTouchPoints > 0 ||
+          // @ts-expect-error - msMaxTouchPoints is not a standard property
+          navigator.msMaxTouchPoints > 0
+        );
+      };
+
+      setHasTouchCapability(checkTouchCapability());
+
+      // Global touch event listener to detect touch usage
+      const handleTouchStart = () => {
+        setIsActive(false);
+        setHasMouseMoved(false);
+      };
+
+      // Global mouse move listener to detect actual mouse movement
+      const handleGlobalMouseMove = (e: MouseEvent) => {
+        // Only consider it a real mouse move if the movement is significant
+        // This helps filter out synthetic mouse events from touch
+        if (e.movementX !== 0 || e.movementY !== 0) {
+          setHasMouseMoved(true);
+        }
+      };
+
+      document.addEventListener("touchstart", handleTouchStart, {
+        passive: true,
+      });
+      document.addEventListener("mousemove", handleGlobalMouseMove, {
+        passive: true,
+      });
+
+      return () => {
+        document.removeEventListener("touchstart", handleTouchStart);
+        document.removeEventListener("mousemove", handleGlobalMouseMove);
+      };
+    }
+  }, []);
+
+  useEffect(() => {
+    // if (typeof window !== "undefined" && containerRef.current) {
+    //   // Get the parent element directly from the ref
+    //   const parentElement = containerRef.current.parentElement;
+
+    //   if (parentElement) {
+    //     // Add cursor-none to parent
+    //     parentElement.style.cursor = "none";
+
+    //     // Add event listeners to parent
+    //     const handleMouseMove = (e: MouseEvent) => {
+    //       x.set(e.clientX);
+    //       y.set(e.clientY);
+    //     };
+
+    //     const handleMouseEnter = () => {
+    //       setIsActive(true);
+    //     };
+
+    //     const handleMouseLeave = () => {
+    //       setIsActive(false);
+    //     };
+
+    //     parentElement.addEventListener("mousemove", handleMouseMove);
+    //     parentElement.addEventListener("mouseenter", handleMouseEnter);
+    //     parentElement.addEventListener("mouseleave", handleMouseLeave);
+
+    //     return () => {
+    //       parentElement.style.cursor = "";
+    //       parentElement.removeEventListener("mousemove", handleMouseMove);
+    //       parentElement.removeEventListener("mouseenter", handleMouseEnter);
+    //       parentElement.removeEventListener("mouseleave", handleMouseLeave);
+    //     };
+    //   }
+    // }
     if (typeof window !== "undefined" && containerRef.current) {
       // Get the parent element directly from the ref
       const parentElement = containerRef.current.parentElement;
 
       if (parentElement) {
-        // Add cursor-none to parent
-        parentElement.style.cursor = "none";
+        // Only hide cursor if we're confident this is a mouse-capable device
+        if (!hasTouchCapability || hasMouseMoved) {
+          parentElement.style.cursor = "none";
+        }
 
         // Add event listeners to parent
         const handleMouseMove = (e: MouseEvent) => {
-          x.set(e.clientX);
-          y.set(e.clientY);
+          // Only update position if we've detected actual mouse movement
+          if (!hasTouchCapability || hasMouseMoved) {
+            x.set(e.clientX);
+            y.set(e.clientY);
+          }
         };
 
         const handleMouseEnter = () => {
-          setIsActive(true);
+          // Only activate if this is not a touch device or we've detected mouse movement
+          if (!hasTouchCapability || hasMouseMoved) {
+            setIsActive(true);
+          }
         };
 
         const handleMouseLeave = () => {
@@ -65,13 +154,17 @@ export function Pointer({
         };
       }
     }
-  }, [x, y]);
+    // }, [x, y]);
+  }, [x, y, hasTouchCapability, hasMouseMoved]);
+
+  // Don't render pointer on touch devices unless mouse movement is detected
+  const shouldShowPointer = !hasTouchCapability || hasMouseMoved;
 
   return (
     <>
       <div ref={containerRef} />
       <AnimatePresence>
-        {isActive && (
+        {isActive && shouldShowPointer && (
           <motion.div
             className="transform-[translate(-50%,-50%)] pointer-events-none fixed z-50"
             style={{
