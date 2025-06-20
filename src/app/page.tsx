@@ -19,13 +19,19 @@ export default async function Home() {
               </h2>
               <div className="text-md text-muted-foreground space-y-4 md:text-lg">
                 <p>
-                  I&apos;m a full-stack software developer with a deep interest
-                  in AI-powered applications.
+                  I&apos;m a software developer/engineer with a deep interest in
+                  AI-powered applications.
                 </p>
                 <p>
-                  I&apos;ve built real-world projects that connect frontend,
-                  backend, and cloud services with AI using tools like
-                  TypeScript, React, Django, Node.js, LangChain, and OpenAI.
+                  I&apos;ve built real-world full-stack applications that
+                  connect frontend, backend, and cloud services with AI using
+                  tools like TypeScript, React, Django, Node.js, LangChain, and
+                  OpenAI.
+                </p>
+                <p>
+                  I am currently working on PHP, WordPress, Vue.js, and Laravel
+                  to expand my development skills and gain flexibility in both
+                  backend and CMS-based projects.
                 </p>
                 <p>
                   I&apos;m committed to writing clean, maintainable code and
@@ -36,13 +42,11 @@ export default async function Home() {
 
               {/* Contact and Links */}
               <div>
-                <p className="text-muted-foreground">
-                  <span className="text-primary/80 font-semibold">
-                    Get in touch ✉️{" "}
-                  </span>
+                <p className="text-foreground">
+                  <span>Get in touch ✉️ </span>
                   <a
                     href="mailto:feelsuegood@gmail.com"
-                    className="text-primary/80 hover:underline"
+                    className="hover:underline"
                   >
                     feelsuegood@gmail.com
                   </a>
@@ -61,26 +65,27 @@ export default async function Home() {
                   className="h-full w-full object-cover"
                 />
               </div>
-              <div className="text-primary flex gap-1">
+              <div className="text-foreground flex gap-1">
+                <span>👩🏻‍💻 </span>
                 <a
                   href="https://github.com/feelsuegood"
-                  className="hover:text-primary transition-colors"
+                  className="hover:underline"
                 >
-                  👩🏻‍💻 Github
+                  Github
                 </a>
-                <span>•</span>
+                <span> • 👤 </span>
                 <a
                   href="https://www.linkedin.com/in/feelsuegood"
-                  className="hover:text-primary transition-colors"
+                  className="hover:underline"
                 >
-                  👤 LinkedIn
+                  LinkedIn
                 </a>
-                <span>•</span>
+                <span> • ➡️ </span>
                 <a
                   href="https://www.seek.com.au/profile/sue-jeong-XGD5RSYYyc"
-                  className="hover:text-primary transition-colors"
+                  className="hover:underline"
                 >
-                  ➡️ Seek
+                  Seek
                 </a>
               </div>
             </div>
@@ -209,20 +214,20 @@ export default async function Home() {
           <div className="border-muted mb-12 border-b pb-12">
             <div className="grid grid-cols-1 items-start gap-8 lg:grid-cols-2">
               <div>
-                <h3 className="text-foreground mb-4 flex items-center gap-2 text-2xl font-bold">
+                <h3 className="text-primary mb-4 flex items-center gap-2 text-2xl font-bold">
                   🤩 Suemake
                 </h3>
                 <div className="mb-4 flex gap-4 text-sm">
                   <a
                     href="https://suemake.vercel.app/"
-                    className="text-primary transition-colors hover:underline"
+                    className="text-foreground transition-colors hover:underline"
                   >
                     🔗 Live Demo
                   </a>
                   <span className="text-muted-foreground">•</span>
                   <a
                     href="https://github.com/feelsuegood/suemake"
-                    className="text-primary transition-colors hover:underline"
+                    className="text-foreground transition-colors hover:underline"
                   >
                     Github Repo
                   </a>
@@ -234,11 +239,9 @@ export default async function Home() {
                     interaction, product listings, and user management.
                   </p>
                   <p>
-                    <span className="text-foreground font-semibold">
-                      Skills:
-                    </span>{" "}
-                    Full-Stack Development • Remix • Supabase • React • REST
-                    APIs • Tailwind CSS • TypeScript • JavaScript
+                    <span className="font-semibold">Skills:</span> Full-Stack
+                    Development • Remix • Supabase • React • REST APIs •
+                    Tailwind CSS • TypeScript • JavaScript
                   </p>
                 </div>
               </div>
@@ -265,27 +268,27 @@ export default async function Home() {
           <div className="border-muted mb-12 border-b pb-12">
             <div className="grid grid-cols-1 items-start gap-8 lg:grid-cols-2">
               <div>
-                <h3 className="text-foreground mb-4 flex items-center gap-2 text-2xl font-bold">
+                <h3 className="text-primary mb-4 flex items-center gap-2 text-2xl font-bold">
                   🤖 GPT Assistants
                 </h3>
                 <div className="mb-4 flex flex-wrap gap-4 text-sm">
                   <a
                     href="https://feelsuegood-gpt-assistants-fullstack-home-deploy-pvpuhw.streamlit.app"
-                    className="text-primary transition-colors hover:underline"
+                    className="text-foreground transition-colors hover:underline"
                   >
                     🔗 Live Demo
                   </a>
                   <span className="text-muted-foreground">•</span>
                   <a
                     href="https://www.youtube.com/watch?v=IJ0SyFA99dw"
-                    className="text-primary transition-colors hover:underline"
+                    className="text-foreground transition-colors hover:underline"
                   >
                     Demo Video
                   </a>
                   <span className="text-muted-foreground">•</span>
                   <a
                     href="https://github.com/feelsuegood/gpt-assistants-fullstack"
-                    className="text-primary transition-colors hover:underline"
+                    className="text-foreground transition-colors hover:underline"
                   >
                     Github Repo
                   </a>
@@ -299,12 +302,10 @@ export default async function Home() {
                     automation, meeting transcription, financial research.
                   </p>
                   <p>
-                    <span className="text-foreground font-semibold">
-                      Skills:
-                    </span>{" "}
-                    Full-Stack Development • LangChain • OpenAI • Streamlit •
-                    Whisper • Hugging Face • Pinecone • FastAPI • Azure AI
-                    Foundry • Amazon Bedrock
+                    <span className="font-semibold">Skills:</span> Full-Stack
+                    Development • LangChain • OpenAI • Streamlit • Whisper •
+                    Hugging Face • Pinecone • FastAPI • Azure AI Foundry •
+                    Amazon Bedrock
                   </p>
                 </div>
               </div>
@@ -331,20 +332,20 @@ export default async function Home() {
           <div className="border-muted mb-12 border-b pb-12">
             <div className="grid grid-cols-1 items-start gap-8 lg:grid-cols-2">
               <div>
-                <h3 className="text-foreground mb-4 flex items-center gap-2 text-2xl font-bold">
+                <h3 className="text-primary mb-4 flex items-center gap-2 text-2xl font-bold">
                   💌 Sueweetstay
                 </h3>
                 <div className="mb-4 flex gap-4 text-sm">
                   <a
                     href="https://www.sueweetstay.com/"
-                    className="text-primary transition-colors hover:underline"
+                    className="text-foreground transition-colors hover:underline"
                   >
                     🔗 Live Demo
                   </a>
                   <span className="text-muted-foreground">•</span>
                   <a
                     href="https://github.com/feelsuegood/sueweetstay-fullstack"
-                    className="text-primary transition-colors hover:underline"
+                    className="text-foreground transition-colors hover:underline"
                   >
                     Github Repo
                   </a>
@@ -357,12 +358,10 @@ export default async function Home() {
                     React Query, and React Router.
                   </p>
                   <p>
-                    <span className="text-foreground font-semibold">
-                      Skills:
-                    </span>{" "}
-                    Full-Stack Development • Django • Apollo GraphQL • React •
-                    TypeScript • Docker • DevOps • REST APIs • GraphQL •
-                    Object-Oriented Programming (OOP)
+                    <span className="font-semibold">Skills:</span> Full-Stack
+                    Development • Django • Apollo GraphQL • React • TypeScript •
+                    Docker • DevOps • REST APIs • GraphQL • Object-Oriented
+                    Programming (OOP)
                   </p>
                 </div>
               </div>
@@ -389,27 +388,27 @@ export default async function Home() {
           <div className="border-muted mb-12 border-b pb-12">
             <div className="grid grid-cols-1 items-start gap-8 lg:grid-cols-2">
               <div>
-                <h3 className="text-foreground mb-4 flex items-center gap-2 text-2xl font-bold">
+                <h3 className="text-primary mb-4 flex items-center gap-2 text-2xl font-bold">
                   🍭 Switter
                 </h3>
                 <div className="mb-4 flex flex-wrap gap-4 text-sm">
                   <a
                     href="https://letsue-firebase.web.app/"
-                    className="text-primary transition-colors hover:underline"
+                    className="text-foreground transition-colors hover:underline"
                   >
                     🔗 Live Demo
                   </a>
                   <span className="text-muted-foreground">•</span>
                   <a
                     href="https://www.youtube.com/watch?v=5TAbcZB03z4"
-                    className="text-primary transition-colors hover:underline"
+                    className="text-foreground transition-colors hover:underline"
                   >
                     Demo Video
                   </a>
                   <span className="text-muted-foreground">•</span>
                   <a
                     href="https://github.com/feelsuegood/letsue-firebase"
-                    className="text-primary transition-colors hover:underline"
+                    className="text-foreground transition-colors hover:underline"
                   >
                     Github Repo
                   </a>
@@ -421,10 +420,8 @@ export default async function Home() {
                     updates, user authentication, and image uploads.
                   </p>
                   <p>
-                    <span className="text-foreground font-semibold">
-                      Skills:
-                    </span>{" "}
-                    Firebase • React • Cloud Firestore • TypeScript • JavaScript
+                    <span className="font-semibold">Skills:</span> Firebase •
+                    React • Cloud Firestore • TypeScript • JavaScript
                   </p>
                 </div>
               </div>
@@ -451,20 +448,20 @@ export default async function Home() {
           <div className="border-muted mb-12 border-b pb-12">
             <div className="grid grid-cols-1 items-start gap-8 lg:grid-cols-2">
               <div>
-                <h3 className="text-foreground mb-4 flex items-center gap-2 text-2xl font-bold">
+                <h3 className="text-primary mb-4 flex items-center gap-2 text-2xl font-bold">
                   📺 Let&apos;sue Watch
                 </h3>
                 <div className="mb-4 flex gap-4 text-sm">
                   <a
                     href="https://suetube.onrender.com/"
-                    className="text-primary transition-colors hover:underline"
+                    className="text-foreground transition-colors hover:underline"
                   >
                     🔗 Live Demo
                   </a>
                   <span className="text-muted-foreground">•</span>
                   <a
                     href="https://github.com/feelsuegood/letsuewatch"
-                    className="text-primary transition-colors hover:underline"
+                    className="text-foreground transition-colors hover:underline"
                   >
                     Github Repo
                   </a>
@@ -476,11 +473,9 @@ export default async function Home() {
                     Pug templates.
                   </p>
                   <p>
-                    <span className="text-foreground font-semibold">
-                      Skills:
-                    </span>{" "}
-                    Full-Stack Development • Express • Node.js • Babel.js •
-                    MongoDB • SCSS • Pug • Docker • REST APIs • DevOps
+                    <span className="font-semibold">Skills:</span> Full-Stack
+                    Development • Express • Node.js • Babel.js • MongoDB • SCSS
+                    • Pug • Docker • REST APIs • DevOps
                   </p>
                 </div>
               </div>
@@ -507,20 +502,20 @@ export default async function Home() {
           <div className="border-muted mb-12 border-b pb-12">
             <div className="grid grid-cols-1 items-start gap-8 lg:grid-cols-2">
               <div>
-                <h3 className="text-foreground mb-4 flex items-center gap-2 text-2xl font-bold">
+                <h3 className="text-primary mb-4 flex items-center gap-2 text-2xl font-bold">
                   📣 Suementum
                 </h3>
                 <div className="mb-4 flex gap-4 text-sm">
                   <a
                     href="https://feelsuegood.github.io/letsue-vanillajs/"
-                    className="text-primary transition-colors hover:underline"
+                    className="text-foreground transition-colors hover:underline"
                   >
                     🔗 Live Demo
                   </a>
                   <span className="text-muted-foreground">•</span>
                   <a
                     href="https://github.com/feelsuegood/letsue-vanillajs"
-                    className="text-primary transition-colors hover:underline"
+                    className="text-foreground transition-colors hover:underline"
                   >
                     Github Repo
                   </a>
@@ -532,10 +527,8 @@ export default async function Home() {
                     CSS3, and Vanilla JavaScript.
                   </p>
                   <p>
-                    <span className="text-foreground font-semibold">
-                      Skills:
-                    </span>{" "}
-                    HTML5 • CSS3 • Vanilla JavaScript • AJAX
+                    <span className="font-semibold">Skills:</span> HTML5 • CSS3
+                    • Vanilla JavaScript • AJAX
                   </p>
                 </div>
               </div>
@@ -562,27 +555,27 @@ export default async function Home() {
           <div className="mb-12">
             <div className="grid grid-cols-1 items-start gap-8 lg:grid-cols-2">
               <div>
-                <h3 className="text-foreground mb-4 flex items-center gap-2 text-2xl font-bold">
+                <h3 className="text-primary mb-4 flex items-center gap-2 text-2xl font-bold">
                   📮 Messenger UI
                 </h3>
                 <div className="mb-4 flex flex-wrap gap-4 text-sm">
                   <a
                     href="https://feelsuegood.github.io/letsue-html-css/"
-                    className="text-primary transition-colors hover:underline"
+                    className="text-foreground transition-colors hover:underline"
                   >
                     🔗 Live Demo
                   </a>
                   <span className="text-muted-foreground">•</span>
                   <a
                     href="https://www.youtube.com/watch?v=yXRKOXc_3xo"
-                    className="text-primary transition-colors hover:underline"
+                    className="text-foreground transition-colors hover:underline"
                   >
                     Demo Video
                   </a>
                   <span className="text-muted-foreground">•</span>
                   <a
                     href="https://github.com/feelsuegood/letsue-html-css"
-                    className="text-primary transition-colors hover:underline"
+                    className="text-foreground transition-colors hover:underline"
                   >
                     Github Repo
                   </a>
@@ -594,10 +587,7 @@ export default async function Home() {
                     popular messaging platform.
                   </p>
                   <p>
-                    <span className="text-foreground font-semibold">
-                      Skills:
-                    </span>{" "}
-                    HTML5 • CSS3
+                    <span className="font-semibold">Skills:</span> HTML5 • CSS3
                   </p>
                 </div>
               </div>
