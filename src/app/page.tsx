@@ -14,7 +14,7 @@ export default async function Home() {
         <section className="mb-16">
           <div className="grid grid-cols-1 space-y-10 lg:grid-cols-2 lg:gap-10">
             <div className="flex h-full flex-col gap-5 lg:justify-between">
-              <h2 className="text-foreground text-xl font-bold md:text-3xl">
+              <h2 className="text-primary text-xl font-bold md:text-4xl">
                 Hello, I&apos;m @feelsuegood.
               </h2>
               <div className="text-md text-muted-foreground space-y-4 md:text-lg">
@@ -42,11 +42,13 @@ export default async function Home() {
 
               {/* Contact and Links */}
               <div>
-                <p className="text-foreground">
+                <p className="text-foreground font-semibold">
                   <span>Get in touch ✉️ </span>
                   <a
                     href="mailto:feelsuegood@gmail.com"
                     className="hover:underline"
+                    target="_blank"
+                    rel="noopener noreferrer"
                   >
                     feelsuegood@gmail.com
                   </a>
@@ -65,11 +67,13 @@ export default async function Home() {
                   className="h-full w-full object-cover"
                 />
               </div>
-              <div className="text-foreground flex gap-1">
+              <div className="text-foreground flex gap-2">
                 <span>👩🏻‍💻 </span>
                 <a
                   href="https://github.com/feelsuegood"
                   className="hover:underline"
+                  target="_blank"
+                  rel="noopener noreferrer"
                 >
                   Github
                 </a>
@@ -77,15 +81,19 @@ export default async function Home() {
                 <a
                   href="https://www.linkedin.com/in/feelsuegood"
                   className="hover:underline"
+                  target="_blank"
+                  rel="noopener noreferrer"
                 >
                   LinkedIn
                 </a>
-                <span> • ➡️ </span>
+                <span> • 📸 </span>
                 <a
-                  href="https://www.seek.com.au/profile/sue-jeong-XGD5RSYYyc"
+                  href="https://www.instagram.com/feelsuegood"
                   className="hover:underline"
+                  target="_blank"
+                  rel="noopener noreferrer"
                 >
-                  Seek
+                  Instagram
                 </a>
               </div>
             </div>
@@ -217,10 +225,12 @@ export default async function Home() {
                 <h3 className="text-primary mb-4 flex items-center gap-2 text-2xl font-bold">
                   🤩 Suemake
                 </h3>
-                <div className="mb-4 flex gap-4 text-sm">
+                <div className="mb-4 flex gap-1.5 text-sm">
                   <a
                     href="https://suemake.vercel.app/"
                     className="text-foreground transition-colors hover:underline"
+                    target="_blank"
+                    rel="noopener noreferrer"
                   >
                     🔗 Live Demo
                   </a>
@@ -228,6 +238,8 @@ export default async function Home() {
                   <a
                     href="https://github.com/feelsuegood/suemake"
                     className="text-foreground transition-colors hover:underline"
+                    target="_blank"
+                    rel="noopener noreferrer"
                   >
                     Github Repo
                   </a>
@@ -271,10 +283,12 @@ export default async function Home() {
                 <h3 className="text-primary mb-4 flex items-center gap-2 text-2xl font-bold">
                   🤖 GPT Assistants
                 </h3>
-                <div className="mb-4 flex flex-wrap gap-4 text-sm">
+                <div className="mb-4 flex flex-wrap gap-1.5 text-sm">
                   <a
                     href="https://feelsuegood-gpt-assistants-fullstack-home-deploy-pvpuhw.streamlit.app"
                     className="text-foreground transition-colors hover:underline"
+                    target="_blank"
+                    rel="noopener noreferrer"
                   >
                     🔗 Live Demo
                   </a>
@@ -282,6 +296,8 @@ export default async function Home() {
                   <a
                     href="https://www.youtube.com/watch?v=IJ0SyFA99dw"
                     className="text-foreground transition-colors hover:underline"
+                    target="_blank"
+                    rel="noopener noreferrer"
                   >
                     Demo Video
                   </a>
@@ -289,6 +305,8 @@ export default async function Home() {
                   <a
                     href="https://github.com/feelsuegood/gpt-assistants-fullstack"
                     className="text-foreground transition-colors hover:underline"
+                    target="_blank"
+                    rel="noopener noreferrer"
                   >
                     Github Repo
                   </a>
@@ -335,10 +353,12 @@ export default async function Home() {
                 <h3 className="text-primary mb-4 flex items-center gap-2 text-2xl font-bold">
                   💌 Sueweetstay
                 </h3>
-                <div className="mb-4 flex gap-4 text-sm">
+                <div className="mb-4 flex gap-1.5 text-sm">
                   <a
                     href="https://www.sueweetstay.com/"
                     className="text-foreground transition-colors hover:underline"
+                    target="_blank"
+                    rel="noopener noreferrer"
                   >
                     🔗 Live Demo
                   </a>
@@ -346,6 +366,8 @@ export default async function Home() {
                   <a
                     href="https://github.com/feelsuegood/sueweetstay-fullstack"
                     className="text-foreground transition-colors hover:underline"
+                    target="_blank"
+                    rel="noopener noreferrer"
                   >
                     Github Repo
                   </a>
@@ -391,10 +413,12 @@ export default async function Home() {
                 <h3 className="text-primary mb-4 flex items-center gap-2 text-2xl font-bold">
                   🍭 Switter
                 </h3>
-                <div className="mb-4 flex flex-wrap gap-4 text-sm">
+                <div className="mb-4 flex flex-wrap gap-1.5 text-sm">
                   <a
                     href="https://letsue-firebase.web.app/"
                     className="text-foreground transition-colors hover:underline"
+                    target="_blank"
+                    rel="noopener noreferrer"
                   >
                     🔗 Live Demo
                   </a>
@@ -402,6 +426,8 @@ export default async function Home() {
                   <a
                     href="https://www.youtube.com/watch?v=5TAbcZB03z4"
                     className="text-foreground transition-colors hover:underline"
+                    target="_blank"
+                    rel="noopener noreferrer"
                   >
                     Demo Video
                   </a>
@@ -409,6 +435,8 @@ export default async function Home() {
                   <a
                     href="https://github.com/feelsuegood/letsue-firebase"
                     className="text-foreground transition-colors hover:underline"
+                    target="_blank"
+                    rel="noopener noreferrer"
                   >
                     Github Repo
                   </a>
@@ -449,12 +477,14 @@ export default async function Home() {
             <div className="grid grid-cols-1 items-start gap-8 lg:grid-cols-2">
               <div>
                 <h3 className="text-primary mb-4 flex items-center gap-2 text-2xl font-bold">
-                  📺 Let&apos;sue Watch
+                  📺 Let&apos;Sue Watch
                 </h3>
-                <div className="mb-4 flex gap-4 text-sm">
+                <div className="mb-4 flex gap-1.5 text-sm">
                   <a
                     href="https://suetube.onrender.com/"
                     className="text-foreground transition-colors hover:underline"
+                    target="_blank"
+                    rel="noopener noreferrer"
                   >
                     🔗 Live Demo
                   </a>
@@ -462,6 +492,8 @@ export default async function Home() {
                   <a
                     href="https://github.com/feelsuegood/letsuewatch"
                     className="text-foreground transition-colors hover:underline"
+                    target="_blank"
+                    rel="noopener noreferrer"
                   >
                     Github Repo
                   </a>
@@ -505,10 +537,12 @@ export default async function Home() {
                 <h3 className="text-primary mb-4 flex items-center gap-2 text-2xl font-bold">
                   📣 Suementum
                 </h3>
-                <div className="mb-4 flex gap-4 text-sm">
+                <div className="mb-4 flex gap-1.5 text-sm">
                   <a
                     href="https://feelsuegood.github.io/letsue-vanillajs/"
                     className="text-foreground transition-colors hover:underline"
+                    target="_blank"
+                    rel="noopener noreferrer"
                   >
                     🔗 Live Demo
                   </a>
@@ -516,6 +550,8 @@ export default async function Home() {
                   <a
                     href="https://github.com/feelsuegood/letsue-vanillajs"
                     className="text-foreground transition-colors hover:underline"
+                    target="_blank"
+                    rel="noopener noreferrer"
                   >
                     Github Repo
                   </a>
@@ -558,10 +594,12 @@ export default async function Home() {
                 <h3 className="text-primary mb-4 flex items-center gap-2 text-2xl font-bold">
                   📮 Messenger UI
                 </h3>
-                <div className="mb-4 flex flex-wrap gap-4 text-sm">
+                <div className="mb-4 flex flex-wrap gap-1.5 text-sm">
                   <a
                     href="https://feelsuegood.github.io/letsue-html-css/"
                     className="text-foreground transition-colors hover:underline"
+                    target="_blank"
+                    rel="noopener noreferrer"
                   >
                     🔗 Live Demo
                   </a>
@@ -569,6 +607,8 @@ export default async function Home() {
                   <a
                     href="https://www.youtube.com/watch?v=yXRKOXc_3xo"
                     className="text-foreground transition-colors hover:underline"
+                    target="_blank"
+                    rel="noopener noreferrer"
                   >
                     Demo Video
                   </a>
@@ -576,6 +616,8 @@ export default async function Home() {
                   <a
                     href="https://github.com/feelsuegood/letsue-html-css"
                     className="text-foreground transition-colors hover:underline"
+                    target="_blank"
+                    rel="noopener noreferrer"
                   >
                     Github Repo
                   </a>
