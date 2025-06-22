@@ -1,9 +1,6 @@
-interface ContactSectionProps {
-  title: string;
-  email: string;
-}
+import type { IContactData } from "@/data/types";
 
-export function ContactSection({ title, email }: ContactSectionProps) {
+export function ContactSection({ title, email }: IContactData) {
   return (
     <section className="mb-16">
       <div className="grid grid-cols-1 text-center md:grid-cols-2">

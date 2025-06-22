@@ -1,20 +1,5 @@
 import Image from "next/image";
-
-interface ProjectLink {
-  url: string;
-  label: string;
-}
-
-interface ProjectCardProps {
-  emoji: string;
-  title: string;
-  links: ProjectLink[];
-  description: string;
-  skills: string;
-  imageSrc: string;
-  imageAlt: string;
-  isLast?: boolean;
-}
+import type { IProject } from "@/data/types";
 
 export function ProjectCard({
   emoji,
@@ -25,7 +10,7 @@ export function ProjectCard({
   imageSrc,
   imageAlt,
   isLast = false,
-}: ProjectCardProps) {
+}: IProject) {
   return (
     <div
       className={`${!isLast ? "border-muted mb-12 border-b pb-12" : "mb-12"}`}

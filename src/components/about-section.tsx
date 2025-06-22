@@ -1,15 +1,5 @@
 import Image from "next/image";
-
-interface AboutSectionProps {
-  title: string;
-  description: string[];
-  email: string;
-  avatarSrc: string;
-  avatarAlt: string;
-  githubUrl: string;
-  linkedinUrl: string;
-  instagramUrl: string;
-}
+import type { IAboutData } from "@/data/types";
 
 export function AboutSection({
   title,
@@ -20,7 +10,7 @@ export function AboutSection({
   githubUrl,
   linkedinUrl,
   instagramUrl,
-}: AboutSectionProps) {
+}: IAboutData) {
   return (
     <section className="mb-16">
       <div className="grid grid-cols-1 space-y-10 lg:grid-cols-2 lg:gap-10">

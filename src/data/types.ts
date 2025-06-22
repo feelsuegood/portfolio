@@ -1,5 +1,5 @@
 // About section types
-export interface AboutData {
+export interface IAboutData {
   title: string;
   description: string[];
   email: string;
@@ -11,50 +11,51 @@ export interface AboutData {
 }
 
 // Skills section types
-export interface SkillSubcategory {
+export interface ISkillSubcategory {
   title: string;
   skills: string[];
 }
 
-export interface SkillCategory {
+export interface ISkillCategory {
   title: string;
   skills: string[];
-  subcategories?: SkillSubcategory[];
+  subcategories?: ISkillSubcategory[];
 }
 
-export interface SkillsData {
+export interface ISkillsData {
   title: string;
-  categories: SkillCategory[];
+  categories: ISkillCategory[];
 }
 
 // Projects section types
-export interface ProjectLink {
+export interface IProjectLink {
   url: string;
   label: string;
 }
 
-export interface Project {
+export interface IProject {
   emoji: string;
   title: string;
-  links: ProjectLink[];
+  links: IProjectLink[];
   description: string;
   skills: string;
   imageSrc: string;
   imageAlt: string;
+  isLast?: boolean;
 }
 
-export interface ProjectsData {
+export interface IProjectsData {
   title: string;
-  projects: Project[];
+  projects: IProject[];
 }
 
 // Contact section types
-export interface ContactData {
+export interface IContactData {
   title: string;
   email: string;
 }
 
 // Footer types
-export interface FooterData {
+export interface IFooterData {
   copyrightText: string;
 }

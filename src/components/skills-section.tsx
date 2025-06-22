@@ -1,15 +1,6 @@
-interface SkillCategory {
-  title: string;
-  skills: string[];
-  subcategories?: { title: string; skills: string[] }[];
-}
+import type { ISkillsData } from "@/data/types";
 
-interface SkillsSectionProps {
-  title: string;
-  categories: SkillCategory[];
-}
-
-export function SkillsSection({ title, categories }: SkillsSectionProps) {
+export function SkillsSection({ title, categories }: ISkillsData) {
   return (
     <section className="mb-16">
       <h2 className="border-border text-foreground mb-8 border-b pb-4 text-3xl font-bold">
