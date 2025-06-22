@@ -67,33 +67,32 @@ export default async function Home() {
                   className="h-full w-full object-cover"
                 />
               </div>
-              <div className="text-foreground flex gap-2">
-                <span>👩🏻‍💻 </span>
+              <div className="text-foreground flex text-sm">
                 <a
                   href="https://github.com/feelsuegood"
                   className="hover:underline"
                   target="_blank"
                   rel="noopener noreferrer"
                 >
-                  Github
+                  👩🏻‍💻 Github
                 </a>
-                <span> • 👤 </span>
+                <span>&nbsp;&nbsp;&nbsp;</span>
                 <a
                   href="https://www.linkedin.com/in/feelsuegood"
                   className="hover:underline"
                   target="_blank"
                   rel="noopener noreferrer"
                 >
-                  LinkedIn
+                  👤 LinkedIn
                 </a>
-                <span> • 📸 </span>
+                <span>&nbsp;&nbsp;&nbsp;</span>
                 <a
                   href="https://www.instagram.com/feelsuegood"
                   className="hover:underline"
                   target="_blank"
                   rel="noopener noreferrer"
                 >
-                  Instagram
+                  📸 Instagram
                 </a>
               </div>
             </div>
