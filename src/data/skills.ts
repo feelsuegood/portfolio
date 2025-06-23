@@ -18,7 +18,15 @@ export const skillsData = {
     },
     {
       title: "Front End",
-      skills: ["React", "Next.js", "Remix", "Tailwind CSS", "Chakra UI"],
+      skills: [
+        "React",
+        "Next.js",
+        "Remix",
+        "Tailwind CSS",
+        "shadcn/ui",
+        "Magic UI",
+        "Chakra UI",
+      ],
       subcategories: [
         {
           title: "Mobile",
@@ -32,6 +40,7 @@ export const skillsData = {
         "Node.js",
         "Express",
         "Django",
+        "Firebase",
         "NestJS",
         "GraphQL",
         "Flask",
@@ -44,7 +53,7 @@ export const skillsData = {
         "PostgreSQL",
         "MySQL",
         "MongoDB",
-        "Firebase",
+        "Firebase Firestore",
         "Supabase",
         "Pinecone",
         "Redis",
