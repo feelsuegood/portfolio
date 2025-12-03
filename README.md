@@ -64,7 +64,7 @@ The portfolio showcases 7 major projects:
 - **Email**: feelsuegood@gmail.com
 - **GitHub**: https://github.com/feelsuegood
 - **LinkedIn**: https://www.linkedin.com/in/feelsuegood
-- **Instagram**: https://www.instagram.com/feelsuegood
+<!-- - **Instagram**: https://www.instagram.com/feelsuegood -->
 
 ## 📄 License
 

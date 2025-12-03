@@ -7,7 +7,7 @@ export interface IAboutData {
   avatarAlt: string;
   githubUrl: string;
   linkedinUrl: string;
-  instagramUrl: string;
+  // instagramUrl: string;
 }
 
 // Skills section types

@@ -12,5 +12,5 @@ export const aboutData = {
   avatarAlt: "Profile Avatar",
   githubUrl: "https://github.com/feelsuegood",
   linkedinUrl: "https://www.linkedin.com/in/feelsuegood",
-  instagramUrl: "https://www.instagram.com/feelsuegood",
+  // instagramUrl: "https://www.instagram.com/feelsuegood",
 };
