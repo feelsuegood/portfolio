@@ -1,3 +1,5 @@
+/** @format */
+
 // Skills section data
 export const skillsData = {
   title: "Skills",
@@ -5,11 +7,9 @@ export const skillsData = {
     {
       title: "Programming Languages",
       skills: [
-        "Python",
         "TypeScript",
         "JavaScript",
-        "Dart",
-        "PHP",
+        "Python",
         "SQL",
         "C#",
         "HTML5",
@@ -18,7 +18,7 @@ export const skillsData = {
     },
     {
       title: "Front End",
-      skills: ["React", "Next.js", "Remix", "Tailwind CSS", "Chakra UI"],
+      skills: ["React", "Next.js", "Remix", "Tailwind CSS", "ReactPrime"],
       subcategories: [
         {
           title: "Mobile",
@@ -28,28 +28,11 @@ export const skillsData = {
     },
     {
       title: "Back End",
-      skills: [
-        "Node.js",
-        "Express",
-        "Django",
-        "Firebase",
-        "NestJS",
-        "GraphQL",
-        "Apollo GraphQL",
-        "Flask",
-      ],
+      skills: ["Node.js", "Express", "Django", "Flask", "Firebase"],
     },
     {
       title: "Databases",
-      skills: [
-        "PostgreSQL",
-        "MySQL",
-        "MongoDB",
-        "Cloud Firestore",
-        "Supabase",
-        "Pinecone",
-        "Redis",
-      ],
+      skills: ["PostgreSQL", "MySQL", "Supabase", "MongoDB", "Cloud Firestore"],
     },
     {
       title: "Cloud & DevOps",
@@ -63,16 +46,7 @@ export const skillsData = {
     },
     {
       title: "AI & Tools",
-      skills: [
-        "OpenAI",
-        "Langchain",
-        "Azure AI Foundry",
-        "Amazon Bedrock",
-        "Ollama",
-        "Notion",
-        "JIRA",
-        "Confluence",
-      ],
+      skills: ["OpenAI", "Langchain", "Azure AI Foundry"],
     },
   ],
 };

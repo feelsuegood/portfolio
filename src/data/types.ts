@@ -1,3 +1,5 @@
+/** @format */
+
 // About section types
 export interface IAboutData {
   title: string;
@@ -7,7 +9,7 @@ export interface IAboutData {
   avatarAlt: string;
   githubUrl: string;
   linkedinUrl: string;
-  // instagramUrl: string;
+  instagramUrl: string;
 }
 
 // Skills section types

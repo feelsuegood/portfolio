@@ -1,9 +1,10 @@
+/** @format */
+
 import type { Metadata } from "next";
 import { Plus_Jakarta_Sans, DM_Sans } from "next/font/google";
 import { ThemeProvider } from "@/components/theme-provider";
 // These styles apply to every route in the application
 import "./globals.css";
-import { Pointer } from "@/components/magicui/pointer";
 
 const mainFont = Plus_Jakarta_Sans({
   subsets: ["latin"],
@@ -37,18 +38,6 @@ export default function RootLayout({
           enableSystem
           disableTransitionOnChange
         >
-          <Pointer>
-            <svg
-              width="24"
-              height="24"
-              viewBox="0 0 24 24"
-              fill="none"
-              xmlns="http://www.w3.org/2000/svg"
-            >
-              <circle cx="12" cy="12" r="10" className="fill-primary" />
-              <circle cx="12" cy="12" r="5" className="fill-background" />
-            </svg>
-          </Pointer>
           {children}
         </ThemeProvider>
       </body>
