@@ -1,3 +1,5 @@
+/** @format */
+
 import Image from "next/image";
 import type { IAboutData } from "@/data/types";
 
@@ -9,7 +11,7 @@ export function AboutSection({
   avatarAlt,
   githubUrl,
   linkedinUrl,
-  // instagramUrl,
+  instagramUrl,
 }: IAboutData) {
   return (
     <section className="mb-16">
@@ -69,7 +71,7 @@ export function AboutSection({
             >
               👤 LinkedIn
             </a>
-            {/* <span>&nbsp;&nbsp;&nbsp;</span>
+            <span>&nbsp;&nbsp;&nbsp;</span>
             <a
               href={instagramUrl}
               className="hover:underline"
@@ -77,7 +79,7 @@ export function AboutSection({
               rel="noopener noreferrer"
             >
               📸 Instagram
-            </a> */}
+            </a>
           </div>
         </div>
       </div>
