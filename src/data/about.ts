@@ -4,10 +4,10 @@
 export const aboutData = {
   title: "Hello, I'm @feelsuegood.",
   description: [
-    "I'm a software developer/engineer with a deep interest in AI-powered applications.",
-    "I've built real-world full-stack applications that connect frontend, backend, and cloud services with AI using tools like TypeScript, React, Django, Node.js, LangChain, and OpenAI.",
-    "I am currently working on PHP, WordPress, Vue.js, and Laravel to expand my development skills and gain flexibility in both backend and CMS-based projects.",
-    "I'm committed to writing clean, maintainable code and growing as part of a collaborative team. I love building software that delivers real value to users.",
+    "Curious Full Stack Developer with hands-on experience in React, TypeScript, Python, and AI integration.",
+    "With 6 years of public service experience, including international training programs and multicultural client support, I bring a rare mix of technical skills and cross-cultural communication.",
+    "Delivered production-ready tools end-to-end, automated content workflows with OpenAI APIs, and built a multi-feature AI platform with 8 specialised assistants.",
+    "I love connecting with new people. Feel free to reach out at feelsuegood@gmail.com",
   ],
   email: "feelsuegood@gmail.com",
   avatarSrc: "/images/avatar.png",
